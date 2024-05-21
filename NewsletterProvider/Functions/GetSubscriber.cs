@@ -22,7 +22,6 @@ public class GetSubscriber(ILogger<GetSubscriber> logger, IServiceProvider servi
         try
         {
             var body = await new StreamReader(req.Body).ReadToEndAsync();
-
             if (body != null)
             {
                 try
